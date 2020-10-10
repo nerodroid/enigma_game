@@ -27,6 +27,25 @@ namespace SpeedTutorInspectSystem
 
             int Mask = 1 << layerMaskExclude | layerMaskInteract.value;
 
+
+            if (Input.GetMouseButtonDown(1) ){
+
+                if (isPaused ){
+                    ClosePanel();   
+                    Cursor.lockState = CursorLockMode.None;
+                    Time.timeScale=1;
+                    raycastedObj.ShowExtraInfo();
+                    raycastedObj.HideObjectImage();
+                    //raycastedObj.GetObjectImage();
+                    //Cursor.visible =false;
+                    Cursor.lockState = CursorLockMode.None;
+                    isPaused= false;
+
+                }
+            }
+
+
+
             if (Physics.Raycast(transform.position, fwd, out hit, rayLength, Mask))
             {
                 if (hit.collider.CompareTag("InteractObject"))
@@ -41,10 +60,11 @@ namespace SpeedTutorInspectSystem
                     isCrosshairActive = true;
                     doOnce = true;
                     
+                  
+
+
                     if (Input.GetMouseButtonDown(0))
                     {
-
-                        
 
                         if (isPaused ){
                             ClosePanel();   
