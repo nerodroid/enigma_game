@@ -45,11 +45,10 @@ namespace SpeedTutorInspectSystem
                     {
 
                         
-                        
-
 
                         if (isPaused ){
                             ClosePanel();   
+                            Cursor.lockState = CursorLockMode.None;
                             Time.timeScale=1;
                             raycastedObj.ShowExtraInfo();
                             raycastedObj.HideObjectImage();
@@ -60,6 +59,8 @@ namespace SpeedTutorInspectSystem
 
                         }
                         else{
+
+                            Cursor.lockState = CursorLockMode.Locked;
                             OpenPanel();   
                             Cursor.visible =false;
                             Time.timeScale=0;
