@@ -59,7 +59,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Cursor.visible =false;
         }
 
-
+        
         // Update is called once per frame
         private void Update()
         {

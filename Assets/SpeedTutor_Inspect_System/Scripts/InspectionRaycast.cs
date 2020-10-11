@@ -10,7 +10,7 @@ namespace SpeedTutorInspectSystem
 
 
         [Header("Raycast Length/Layer")]
-        [SerializeField] private int rayLength = 2;
+        [SerializeField] private int rayLength = 1;
         [SerializeField] private LayerMask layerMaskInteract;
         [SerializeField] private LayerMask layerMaskExclude;
         private ObjectController raycastedObj;
@@ -78,7 +78,14 @@ namespace SpeedTutorInspectSystem
                             isPaused= false;
 
                         }
+
+                        
+
                         else{
+
+
+
+
 
                             Cursor.lockState = CursorLockMode.Locked;
                             OpenPanel();   
