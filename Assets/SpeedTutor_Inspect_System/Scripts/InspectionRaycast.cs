@@ -10,7 +10,7 @@ namespace SpeedTutorInspectSystem
 
 
         [Header("Raycast Length/Layer")]
-        [SerializeField] private int rayLength = 5;
+        [SerializeField] private int rayLength = 2;
         [SerializeField] private LayerMask layerMaskInteract;
         [SerializeField] private LayerMask layerMaskExclude;
         private ObjectController raycastedObj;
