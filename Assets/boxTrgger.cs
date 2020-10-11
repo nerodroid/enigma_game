@@ -11,16 +11,11 @@ public class boxTrgger : MonoBehaviour
        //Destroy(gameObject);
         Debug.Log("entered");
 
-        passMenuUI.SetActive(true);
+        //passMenuUI.SetActive(true);
         //Time.timeScale=0;
         //Cursor.lockState = CursorLockMode.None;
         //isPaused= true;
     }
-
-
-
-
-
 
 
 }
