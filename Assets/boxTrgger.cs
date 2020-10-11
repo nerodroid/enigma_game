@@ -12,8 +12,8 @@ public class boxTrgger : MonoBehaviour
         Debug.Log("entered");
 
         passMenuUI.SetActive(true);
-        Time.timeScale=0;
-        Cursor.lockState = CursorLockMode.None;
+        //Time.timeScale=0;
+        //Cursor.lockState = CursorLockMode.None;
         //isPaused= true;
     }
 
