@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public void GetInput(string guess){
+    public GameObject successUI;
+	
+	public void GetInput(string guess){
 		//Debug.Log ("You entered " + guess);
-		if(string.Equals(guess,"123")){
+		if(string.Equals(guess,"25487")){
 			Debug.Log ("level completed");
+			//successUI.SetActive(true);
 		}
 		else{
 			Debug.Log ("try again");
+			//guessKeyUI.SetActive(true);
 		}
 	}
 }

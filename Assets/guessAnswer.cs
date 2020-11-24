@@ -6,6 +6,7 @@ public class guessAnswer : MonoBehaviour
 {
     //public static bool GameIsPaused = false;
     public GameObject guessKeyUI;
+    public GameObject successUI;
 
     // Update is called once per frame
     void Update()
